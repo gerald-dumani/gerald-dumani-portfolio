@@ -214,7 +214,7 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <p className="text-lg text-gray-300 leading-relaxed text-center">
-                I'm an experienced IT&nbsp;Manager and Web&nbsp;Developer with{" "}
+                I'm an experienced Web&nbsp;Developer with{" "}
                 <span className="text-blue-400 font-semibold">5+ years</span>{" "}
                 building scalable, secure applications. I specialize in Laravel,
                 Docker, and Next.js, and I'm passionate about creating efficient

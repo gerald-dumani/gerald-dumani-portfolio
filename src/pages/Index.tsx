@@ -35,7 +35,6 @@ const skills = [
   { name: "Filament Admin Panels", icon: Server, color: "bg-purple-500" },
   { name: "JavaScript", icon: Code, color: "bg-yellow-500" },
   { name: "Vue.js / React / Next.js", icon: Globe, color: "bg-black" },
-{ name: "Authentication & Authorization", icon: Shield, color: "bg-red-600" },
   { name: "Docker", icon: Server, color: "bg-cyan-500" },
   { name: "Git & GitHub Actions", icon: Github, color: "bg-gray-800" },
 ];

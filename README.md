@@ -1,12 +1,12 @@
-# Gerald Dumani — Web Developer Portfolio
+# Gerald Dumani — Backend Developer Portfolio
 
-A single-page portfolio showcasing my work as a **Remote Web Developer** with a focus on **PHP, Laravel, Next.js, Docker,** and modern DevOps practices.
+A single-page portfolio showcasing my work as a **Backend Developer** with a focus on **PHP, Laravel, Next.js, Docker,** and modern DevOps practices.
 
 [Live Site »](https://gerald-dumani.github.io/portfolio/) &nbsp;|&nbsp; [Contact Me »](mailto:geralddumani77@gmail.com)
 
 ---
 
-## ✨ Key Sections
+##  Key Sections
 
 | Section               | Highlights                                                  |
 | --------------------- | ----------------------------------------------------------- |
@@ -18,7 +18,7 @@ A single-page portfolio showcasing my work as a **Remote Web Developer** with a 
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 | Hero & About              | Skills Grid                   |
 | ------------------------- | ----------------------------- |
@@ -28,7 +28,7 @@ A single-page portfolio showcasing my work as a **Remote Web Developer** with a 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** React + TypeScript (Vite), Tailwind CSS, Lucide icons
 - **Animations & UX:** Framer-motion-style transitions, custom particle effect
@@ -37,7 +37,7 @@ A single-page portfolio showcasing my work as a **Remote Web Developer** with a 
 
 ---
 
-## 🚀 Getting Started (Local Dev)
+##  Getting Started (Local Dev)
 
 ```bash
 # 1. Clone

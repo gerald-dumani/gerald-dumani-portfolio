@@ -13,6 +13,7 @@ import {
   Globe,
   ChevronLeft,
   ChevronRight,
+  Shield,
 } from "lucide-react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -29,19 +30,21 @@ import {
 /* ───────────────  DATA  ─────────────── */
 const skills = [
   { name: "PHP & Laravel", icon: Code, color: "bg-blue-500" },
-  { name: "MySQL", icon: Database, color: "bg-orange-500" },
+  { name: "REST APIs", icon: Server, color: "bg-green-600" },
+  { name: "MySQL & MongoDB", icon: Database, color: "bg-orange-500" },
+  { name: "Filament Admin Panels", icon: Server, color: "bg-purple-500" },
+  { name: "JavaScript", icon: Code, color: "bg-yellow-500" },
+  { name: "Vue.js / React / Next.js", icon: Globe, color: "bg-black" },
+{ name: "Authentication & Authorization", icon: Shield, color: "bg-red-600" },
   { name: "Docker", icon: Server, color: "bg-cyan-500" },
-  { name: "Git & GitHub", icon: Github, color: "bg-gray-800" },
-  { name: "Next.js", icon: Globe, color: "bg-black" },
-  { name: "REST APIs", icon: Server, color: "bg-purple-500" },
+  { name: "Git & GitHub Actions", icon: Github, color: "bg-gray-800" },
 ];
-
 const projects = [
   {
     title: "Clinic Management System",
-    tech: "Laravel, Filament, MySQL",
+    tech: "Laravel, Filament, MySQL, Authentication, Role-Based Access",
     description:
-      "Role-based app for doctors and parents to manage children's medical activities and tasks.",
+      "A clinic management system for handling patients, appointments, exercises, medications, and parent access. I worked on the backend structure, admin panels, user roles, and the main workflows used by doctors and parents.",
     gradient: "from-blue-500 to-purple-600",
     screenshots: [
       "screens/appointcal-clinc.png",
@@ -52,21 +55,10 @@ const projects = [
     ],
   },
   {
-    title: "Job Board Frontend",
-    tech: "Next.js, REST APIs",
+    title: "Access Control Dashboard",
+    tech: "PHP, Laravel, MySQL, Docker, Excel Parsing, Reporting",
     description:
-      "Modern frontend for a job-listing site with filters and responsive layout.",
-    gradient: "from-green-500 to-blue-600",
-    screenshots: [
-      "screens/addjobs-jobfrontend.png",
-      "screens/jobhp-jobfrontend.png",
-    ],
-  },
-  {
-    title: "Access Control System",
-    tech: "Docker, PHP, Excel Parsing",
-    description:
-      "Dashboard that parses Excel logs and calculates work-hours, roles and vacation days.",
+      "An internal dashboard for tracking employee attendance, access logs, vacations, work hours, and uploaded Excel data. The goal was to make reporting and daily staff management easier for the company.",
     gradient: "from-orange-500 to-red-600",
     screenshots: [
       "screens/dashboardac-accesscontrol.png",
@@ -77,10 +69,21 @@ const projects = [
     ],
   },
   {
-    title: "SaaS Template Platform",
-    tech: "Next.js, Tailwind CSS",
+    title: "Job Board Platform",
+    tech: "Laravel REST API, MySQL, Vue.js Integration",
     description:
-      "Starter template for scalable SaaS apps with auth, billing and a clean component structure.",
+      "A job board platform where I worked on backend APIs, database structure, and integrations needed by the frontend. The system supports job listings, filtering, and user-related flows.",
+    gradient: "from-green-500 to-blue-600",
+    screenshots: [
+      "screens/addjobs-jobfrontend.png",
+      "screens/jobhp-jobfrontend.png",
+    ],
+  },
+  {
+    title: "Next.js SaaS Starter",
+    tech: "Next.js, Authentication, Tailwind CSS, Deployment",
+    description:
+      "A starter project for a SaaS-style application with authentication, reusable layout, basic payment/testing flow, and deployment setup. This was mainly built to practice clean structure and reusable components.",
     gradient: "from-purple-500 to-pink-600",
     screenshots: [
       "screens/homepagecf-saas.png",
@@ -88,7 +91,6 @@ const projects = [
     ],
   },
 ];
-
 /* ───────────────  COMPONENT  ─────────────── */
 const Index = () => {
   /* hero fade-in */
@@ -152,11 +154,12 @@ const Index = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Web&nbsp;Developer specializing in{" "}
-              <span className="text-blue-400">PHP</span>,{" "}
-              <span className="text-green-400">Laravel</span>,{" "}
-              <span className="text-purple-400">Next.js</span>, and{" "}
-              <span className="text-cyan-400">Docker</span>
+             Software Developer working with{" "}
+<span className="text-blue-400">PHP</span>,{" "}
+<span className="text-green-400">Laravel</span>,{" "}
+<span className="text-purple-400">JavaScript</span>,{" "}
+<span className="text-cyan-400">MySQL</span>, and{" "}
+<span className="text-orange-400">Docker</span>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -164,7 +167,7 @@ const Index = () => {
                 size="lg"
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
                 onClick={() =>
-                  (window.location.href = "mailto:geralddumani77@gmail.com")
+                  (window.location.href = "mailto:gerald.dumani@icloud.com")
                 }
               >
                 <Mail className="mr-2 h-4 w-4" />
@@ -214,11 +217,14 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <p className="text-lg text-gray-300 leading-relaxed text-center">
-                I'm an experienced Web&nbsp;Developer with{" "}
-                <span className="text-blue-400 font-semibold">5+ years</span>{" "}
-                building scalable, secure applications. I specialize in Laravel,
-                Docker, and Next.js, and I'm passionate about creating efficient
-                solutions for remote teams and global clients.
+              I'm a software developer based in Tirana, Albania. Most of my work has been around
+PHP, Laravel, MySQL, REST APIs, admin panels, and internal business tools. I also
+have experience working with frontend technologies like Vue.js, React, and Next.js
+when projects need a complete web solution.
+
+Before focusing more on development, I worked in IT management, which helped me
+understand how companies actually use software day to day. Because of that, I like
+building practical systems that are clear, reliable, and useful for real workflows.
               </p>
             </CardContent>
           </Card>
@@ -257,9 +263,15 @@ const Index = () => {
       {/* ───────── PROJECTS ───────── */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-white text-center mb-12">
-            Featured Projects
-          </h2>
+        <h2 className="text-4xl font-bold text-white text-center mb-4">
+  Featured Projects
+</h2>
+
+<p className="text-gray-300 text-center max-w-3xl mx-auto mb-12">
+  Some projects are based on private or client work, so I cannot share all source
+  code publicly. I included screenshots and short explanations to show what I
+  worked on and what each system was built for.
+</p>
 
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project) => (
@@ -310,7 +322,7 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <div className="flex items-center gap-3 text-gray-300">
                   <Mail className="h-5 w-5 text-blue-400" />
-                  <span>geralddumani77@gmail.com</span>
+                  <span>gerald.dumani@icloud.com</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-300">
                   <Github className="h-5 w-5 text-purple-400" />
